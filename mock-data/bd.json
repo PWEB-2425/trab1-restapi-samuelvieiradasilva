@@ -1,16 +1,46 @@
-
 {
   "alunos": [
     {
-      "nome": "Joana",
+      "nome": "Dejonir",
       "apelido": "Silva",
       "curso": 1,
+      "anoCurricular": 4,
+      "idade": 70,
+      "id": "1"
+    },
+    {
+      "nome": "Eliana",
+      "apelido": "Lemes",
+      "curso": 1,
+      "anoCurricular": 3,
+      "idade": 50,
+      "id": "2"
+    },
+    {
+      "nome": "Samuel",
+      "apelido": "Silva",
+      "curso": 2,
       "anoCurricular": 2,
-      "idade" : 21
+      "idade": 20,
+      "id": "3"
+    },
+    {
+      "nome": "Gabriela",
+      "apelido": "Costa",
+      "curso": 2,
+      "anoCurricular": 1,
+      "idade": 18,
+      "id": "4"
     }
   ],
   "cursos": [
-    { "id" : 1, "nomeDoCurso": "Engenharia da Computação Gráfica e Multimédia" },
-    { "id" : 2, "nomeDoCurso": "Engenharia de Redes e Sistemas de Computadores" }
+    {
+      "id": 1,
+      "nomeDoCurso": "Engenharia da Computação Gráfica e Multimédia"
+    },
+    {
+      "id": 2,
+      "nomeDoCurso": "Engenharia de Redes e Sistemas de Computadores"
+    }
   ]
 }
