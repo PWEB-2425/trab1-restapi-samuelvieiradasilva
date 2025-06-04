@@ -1,1 +1,29 @@
 <!-- Página CRUD de Alunos -->
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão de Alunos</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Gestão de Alunos</h1>
+
+    <form id="formAluno">
+        <input type="hidden" id="alunoId" />
+        <input type="text" id="nome" placeholder="Nome" required />
+        <input type="text" id="apelido" placeholder="Apelido" required />
+        <input type="text" id="curso" placeholder="Curso" required />
+        <input type="number" id="ano" placeholder="Ano Curricular" required />
+        <button type="submit">Guardar</button>
+    </form>
+
+    <h2>Lista de Alunos</h2>
+    <div id="lista"></div>
+</body>
+
+</html>
