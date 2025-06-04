@@ -1,4 +1,6 @@
 // JS para operações CRUD com Fetch API
+//const APIURL = "http://localhost:3001/alunos";
+//const APIURL = "http://localhost:3000/alunos";
 const APIURL = "http://localhost:3000/alunos";
 const lista = document.getElementById("lista");
 const form = document.getElementById("formAluno");
