@@ -23,14 +23,6 @@
       "anoCurricular": 2,
       "idade": 20,
       "id": "3"
-    },
-    {
-      "nome": "Gabriela",
-      "apelido": "Costa",
-      "curso": 2,
-      "anoCurricular": 1,
-      "idade": 18,
-      "id": "4"
     }
   ],
   "cursos": [
