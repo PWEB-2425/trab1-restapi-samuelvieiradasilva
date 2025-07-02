@@ -12,12 +12,10 @@ app.use(express.json());
 
 // JtFOBKX61O94wAZX
 // Conexão com MongoDB Atlas
-mongoose.connect('mongodb+srv://ssamuel:de22el24@pmongo.p2sejfp.mongodb.net/?retryWrites=true&w=majority&appName=pmongo', {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-})
-    .then(() => console.log('MongoDB conectado'))
-    .catch(err => console.error('Erro ao conectar ao MongoDB:', err));
+mongoose.connect('mongodb+srv://ssamuel:de22el24@pmongo.p2sejfp.mongodb.net/trab1?retryWrites=true&w=majority')
+  .then(() => console.log('MongoDB conectado'))
+  .catch(err => console.error('Erro ao conectar ao MongoDB:', err));
+
 
 // Rota RESTful
 app.use('/alunos', alunosRoutes);
