@@ -13,9 +13,24 @@ app.use(express.json());
 // JtFOBKX61O94wAZX
 // Conexão com MongoDB Atlas
 mongoose.connect(process.env.MONGODB_URI)
-  .then(() => console.log('MongoDB conectado'))
-  .catch(err => console.error('Erro ao conectar ao MongoDB:', err));
+  .then(() => {
+    console.log('MongoDB conectado');
 
+    // Configura rotas depois da conexão
+    app.use('/alunos', alunosRoutes);
+
+    app.get('/', (req, res) => {
+      res.send('API Alunos está online!');
+    });
+
+    // Inicia o servidor
+    app.listen(PORT, () => {
+      console.log(`Servidor ligado na porta ${PORT}`);
+    });
+  })
+  .catch(err => {
+    console.error('Erro ao conectar ao MongoDB:', err);
+  });
 
 // Rota RESTful
 app.use('/alunos', alunosRoutes);
