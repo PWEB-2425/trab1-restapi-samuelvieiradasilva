@@ -1,11 +1,16 @@
 const express = require('express');
 const router = express.Router();
-const Aluno = require('../models/Aluno.js');
+const Aluno = require('../models/Aluno');
 
 // GET todos os alunos
 router.get('/', async (req, res) => {
+  try {
     const alunos = await Aluno.find();
     res.json(alunos);
+  } catch (error) {
+    console.error('Erro ao buscar alunos:', error);
+    res.status(500).json({ mensagem: 'Erro interno do servidor' });
+  }
 });
 
 // GET aluno por ID
