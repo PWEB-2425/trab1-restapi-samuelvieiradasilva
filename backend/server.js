@@ -12,7 +12,7 @@ app.use(express.json());
 
 // JtFOBKX61O94wAZX
 // Conexão com MongoDB Atlas
-mongoose.connect('mongodb+srv://ssamuel:de22el24@pmongo.p2sejfp.mongodb.net/', {
+mongoose.connect('mongodb+srv://ssamuel:de22el24@pmongo.p2sejfp.mongodb.net/?retryWrites=true&w=majority&appName=pmongo', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 })
