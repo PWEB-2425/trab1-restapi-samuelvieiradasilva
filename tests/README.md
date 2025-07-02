@@ -18,23 +18,12 @@ trab1-restapi-samuelvieiradasilva/
     README.md -> Instruções, links e notas
     .gitignore
 
-
----
-
 # Links públicos
     Frontend (Vercel): https://trab1-restapi-frontend.vercel.app/
     Backend (Render): https://trab1-restapi-samuelvieiradasilva-1.onrender.com
 
----
-
 # Como testar localmente
 # API real (Node.js + MongoDB)
-```bash
 cd backend
 npm install
 node server.js
-
----
-
-# postman tests
-# coleção exportada pelo postman

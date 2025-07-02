@@ -10,8 +10,9 @@ const PORT = 3000;
 app.use(cors());
 app.use(express.json());
 
+// JtFOBKX61O94wAZX
 // Conexão com MongoDB Atlas
-mongoose.connect('mongodb+srv://ssamuel:JtFOBKX61O94wAZX@pmongo.p2sejfp.mongodb.net/', {
+mongoose.connect('mongodb+srv://ssamuel:de22el24@pmongo.p2sejfp.mongodb.net/', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 })
